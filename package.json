@@ -10,8 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
+    "@react-three/drei": "^9.74.15",
+    "@react-three/fiber": "^8.13.3",
+    "framer-motion": "^10.12.16",
+    "maath": "^0.6.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.13.0",
+    "react-tilt": "^1.0.2",
+    "react-vertical-timeline-component": "^3.6.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
