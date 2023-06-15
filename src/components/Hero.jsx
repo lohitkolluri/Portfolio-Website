@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
@@ -14,9 +15,15 @@ const Hero = () => {
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915eff]">lohit</span>
-            <h1 h1 className={`${styles.heroSubText} mt-2 text-white`}>
-              I am into 
-            </h1>
+            <p>
+              I do &nbsp;
+              <TypeAnimation
+                sequence={["CyberSecurity", 1000, "NLP", 1000, "Ai & ML", 1000]}
+                speed={50}
+                style={{ height: "10px" }}
+                repeat={Infinity}
+              />
+            </p>
           </h1>
         </div>
       </div>
