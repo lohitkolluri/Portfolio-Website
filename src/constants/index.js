@@ -1,8 +1,8 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
+    c,
+    python,
+    java,
+    cpp,
     javascript,
     typescript,
     html,
@@ -15,10 +15,10 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    four,
+    Mathwork,
+    Cisco,
+    edunet,
     carrent,
     jobit,
     tripguide,
@@ -42,20 +42,20 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
-      icon: web,
+      title: "C",
+      icon: c,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
+      title: "C++",
+      icon: cpp,
     },
     {
-      title: "Backend Developer",
-      icon: backend,
+      title: "Python",
+      icon: python,
     },
     {
-      title: "Content Creator",
-      icon: creator,
+      title: "Java",
+      icon: java,
     },
   ];
   
@@ -116,57 +116,57 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Artificial Intelligence Intern",
+      company_name: "Edunet Foundation | IBM SkillsBuild | AICTE",
+      icon: edunet,
+      iconBg: "#ffffff",
+      date: "June 2023 - July 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "1",
+        "2",
+        "3",
+        "4",
       ],
     },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    // {
+    //   title: "SRC/CONSTANTS/EXPERIENCES ln:132",
+    //   company_name: "Cisco",
+    //   icon: Cisco,
+    //   iconBg: "#ffffff",
+    //   date: "NA 2023 - NA 2023",
+    //   points: [
+    //     "1",
+    //     "2",
+    //     "3",
+    //     "4",
+    //   ],
+    // },
+    // {
+    //   title: "SRC/CONSTANTS/EXPERIENCES ln:145",
+    //   company_name: "MathWorks",
+    //   icon: Mathwork,
+    //   iconBg: "#ffffff",
+    //   date: "NA 2023 - NA 2023",
+    //   points: [
+    //     "1",
+    //     "2",
+    //     "3",
+    //     "4",
+    //   ],
+    // },
+    // {
+    //   title: "SRC/CONSTANTS/EXPERIENCES ln:158",
+    //   company_name: "four",
+    //   icon: four,
+    //   iconBg: "#ffffff",
+    //   date: "NA 2023 - NA 2023",
+    //   points: [
+    //     "1",
+    //     "2",
+    //     "3",
+    //     "4",
+    //   ],
+    // },
   ];
   
   const testimonials = [

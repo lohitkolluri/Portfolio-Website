@@ -1,8 +1,10 @@
+import python from "./python.png";
+import c from "./c.png";
+import cpp from "./cpp.png";
+
+
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
+import java from "./java.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -21,10 +23,10 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import edunet from "./company/edunet.png";
+import Cisco from "./company/cisco.png";
+import Mathwork from "./company/Mathwork.png";
+import four from "./company/four.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -32,10 +34,10 @@ import tripguide from "./tripguide.png";
 
 export {
   logo,
-  backend,
-  creator,
-  mobile,
-  web,
+  python,
+  java,
+  cpp,
+  c,
   github,
   menu,
   close,
@@ -52,10 +54,10 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  Mathwork,
+  four,
+  edunet,
+  Cisco,
   carrent,
   jobit,
   tripguide,
