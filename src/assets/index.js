@@ -28,9 +28,9 @@ import Cisco from "./company/cisco.png";
 import Mathwork from "./company/Mathwork.png";
 import four from "./company/four.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import weatherpedia from "./WeatherPedia.png";
+import termpw from "./termpw.png";
+import minipro from "./minipro.png";
 
 export {
   logo,
@@ -58,7 +58,7 @@ export {
   four,
   edunet,
   Cisco,
-  carrent,
-  jobit,
-  tripguide,
+  weatherpedia,
+  termpw,
+  minipro,
 };

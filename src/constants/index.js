@@ -19,9 +19,9 @@ import {
   Mathwork,
   Cisco,
   edunet,
-  carrent,
-  jobit,
-  tripguide,
+  weatherpedia,
+  termpw,
+  minipro,
   threejs,
 } from "../assets";
 
@@ -189,67 +189,75 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "WeatherPedia",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to access weather information for their location by entering it in the search field",
     tags: [
       {
-        name: "react",
+        name: "Javascript",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "HTML",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "bootstrap 5.3.0",
         color: "pink-text-gradient",
       },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: "Weather API by API Ninjas",
+        color: "yellow-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: weatherpedia,
+    source_code_link: "https://github.com/lohitkolluri/WeatherPedia",
   },
   {
-    name: "Trip Guide",
+    name: "Terminal Like Portfolio Website",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A terminal themed portfolio website that allows users to type into the terminal and use commands like a real terminal.",
     tags: [
       {
-        name: "nextjs",
+        name: "HTML",
         color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
       },
       {
         name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Javascript",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: termpw,
+    source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
+  },
+  {
+    name: "Mini Projects",
+    description:
+      "A collection of mini projects i did in my 1st year of college.",
+    tags: [
+      {
+        name: "C",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "C++",
+        color: "green-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "white-text-gradient",
+      },
+    ],
+    image: minipro,
+    source_code_link: "https://github.com/lohitkolluri/Mini-Projects",
   },
 ];
 
