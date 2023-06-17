@@ -31,19 +31,18 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Lohit Kolluri",
-          from_email: form.email,
-          to_email: "lohitkolluri@gmail.com",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
+    emailjs.send(
+      "service_r2i0by4", 
+      "template_mf5x3bh", 
+      {
+        from_name: form.name,
+        to_name: "Lohit Kolluri",
+        from_email: form.email,
+        to_email: "lohitkolluri@gmail.com",
+        message: form.message,
+      },
+      "p-gXzzyvEhPaJ0XA-"
+    )
       .then(
         () => {
           setLoading(false);
