@@ -175,7 +175,7 @@ const experiences = [
 //     name: "John Doe",
 //     designation: "Human",
 //     company: "456 Enterprises",
-//     image: Image Link",
+//     image: "Image Link",
 //   },
 //   {
 //     testimonial:
@@ -184,8 +184,8 @@ const experiences = [
 //     designation: "Human",
 //     company: "789 Enterprises",
 //     image: "Image Link",
-//   },
-// ];
+// }
+// ]
 
 const projects = [
   {
