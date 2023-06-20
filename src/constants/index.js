@@ -23,6 +23,7 @@ import {
   termpw,
   minipro,
   threejs,
+  mhft,
 } from "../assets";
 
 export const navLinks = [
@@ -117,8 +118,8 @@ const experiences = [
     icon: edunet,
     iconBg: "#ffffff",
     date: "June 2023 - July 2023",
-    points: ["1", "2", "3", "4"],
-  },
+    points: ["Made an project on mental health fitness tracker which is a machine learning model that utilizes regression techniques to provide insights into mental health and make predictions based on the available data."],
+     },
   // {
   //   title: "SRC/CONSTANTS/EXPERIENCES ln:132",
   //   company_name: "Cisco",
@@ -233,6 +234,27 @@ const projects = [
     ],
     image: termpw,
     source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
+  },
+  {
+    name: "Mental Health Fitness Tracker",
+    description:
+      "ML model that utilizes regression techniques to provide insights into mental health and make predictions based on the available data.",
+    tags: [
+      {
+        name: "Machine Learning",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Jupyter Noteook",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Regression Algorithm's",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: mhft,
+    source_code_link: "https://github.com/lohitkolluri/mental_health_fitness_tracker",
   },
   {
     name: "Mini Projects",

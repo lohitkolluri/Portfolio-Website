@@ -31,6 +31,7 @@ import four from "./company/four.png";
 import weatherpedia from "./WeatherPedia.png";
 import termpw from "./termpw.png";
 import minipro from "./minipro.png";
+import mhft from "./mhft.png";
 
 export {
   logo,
@@ -61,4 +62,5 @@ export {
   weatherpedia,
   termpw,
   minipro,
+  mhft,
 };
