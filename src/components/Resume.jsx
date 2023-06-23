@@ -6,6 +6,7 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import image1 from "../assets/resume/1.jpg";
 import image2 from "../assets/resume/2.jpg";
 import image3 from "../assets/resume/3.jpg";
+import resumePDF from "../assets/resume/resume.pdf";
 
 const Resume = ({ closeResume }) => {
   const [currentImage, setCurrentImage] = useState(1);
@@ -29,6 +30,10 @@ const Resume = ({ closeResume }) => {
     }
   };
 
+  const handleDownloadResume = () => {
+    window.open(resumePDF, "_blank");
+  };
+
   useEffect(() => {
     document.addEventListener("click", handleClickOutside);
 
@@ -39,24 +44,29 @@ const Resume = ({ closeResume }) => {
 
   return (
     <div
-      className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50"
+      className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-60 z-50"
       onClick={handleClickOutside}
     >
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 0.54 }}
-        transition={{ duration: 0.3 }}
-        className="w-85 h-85 bg-white bg-opacity-60 rounded-2xl p-6 relative"
+        animate={{
+          opacity: 1,
+          scale: window.matchMedia("(min-width: 768px)").matches ? 0.54 : 1,
+        }}
+        transition={{ duration: 0.4, ease: "easeInOut" }}
+        className="w-85 h-85 bg-white bg-opacity-90 rounded-2xl p-6 relative"
         onClick={(event) => event.stopPropagation()}
       >
-        <div className="absolute top-2 right-2">
-          <button
-            className="text-gray-600 hover:text-gray-900"
-            onClick={closeResume}
-          >
-            Close
-          </button>
-        </div>
+        {!window.matchMedia("(min-width: 768px)").matches && (
+          <div className="absolute top-2 right-2">
+            <button
+              className="text-gray-600 hover:text-gray-900"
+              onClick={closeResume}
+            >
+              Close
+            </button>
+          </div>
+        )}
         <div className="flex flex-col justify-center items-center mb-4">
           <div className="w-full h-full rounded-xl overflow-hidden shadow-lg">
             {currentImage === 1 && (
@@ -66,7 +76,7 @@ const Resume = ({ closeResume }) => {
                 className="w-full h-full object-contain"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
               />
             )}
             {currentImage === 2 && (
@@ -76,7 +86,7 @@ const Resume = ({ closeResume }) => {
                 className="w-full h-full object-contain"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
               />
             )}
             {currentImage === 3 && (
@@ -86,7 +96,7 @@ const Resume = ({ closeResume }) => {
                 className="w-full h-full object-contain"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.4, ease: "easeInOut" }}
               />
             )}
           </div>
@@ -96,19 +106,43 @@ const Resume = ({ closeResume }) => {
               onClick={handlePrevImage}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
             >
-              <MdKeyboardArrowLeft size={20} />
+              <MdKeyboardArrowLeft size={20} className="violet-gradient" />
             </motion.button>
             <motion.button
               className="bg-gray-200 text-gray-700 rounded-full p-2 mx-2"
               onClick={handleNextImage}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
             >
-              <MdKeyboardArrowRight size={20} />
+              <MdKeyboardArrowRight size={20} className="violet-gradient" />
             </motion.button>
           </div>
         </div>
+        <div className="absolute bottom-2 left-2">
+          <a
+            href={resumePDF}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-200 text-gray-700 rounded-full p-2 px-4 hover:bg-gray-300 transition-colors duration-200"
+          >
+            Download Resume
+          </a>
+        </div>
+        {window.matchMedia("(min-width: 768px)").matches && (
+          <div className="absolute bottom-2 right-2">
+            <a
+              href="http://website/#contact"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-200 text-gray-700 rounded-full p-2 px-4 hover:bg-gray-300 transition-colors duration-200 violet-gradient"
+            >
+              Hire Me
+            </a>
+          </div>
+        )}
       </motion.div>
     </div>
   );
