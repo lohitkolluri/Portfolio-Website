@@ -17,7 +17,6 @@ import {
   docker,
   four,
   Mathwork,
-  cisco,
   edunet,
   weatherpedia,
   termpw,
@@ -120,19 +119,6 @@ const experiences = [
     date: "June 2023 - July 2023",
     points: ["Made an project on mental health fitness tracker which is a machine learning model that utilizes regression techniques to provide insights into mental health and make predictions based on the available data."],
      },
-  // {
-  //   title: "SRC/CONSTANTS/EXPERIENCES ln:132",
-  //   company_name: "Cisco",
-  //   icon: cisco,
-  //   iconBg: "#ffffff",
-  //   date: "NA 2023 - NA 2023",
-  //   points: [
-  //     "1",
-  //     "2",
-  //     "3",
-  //     "4",
-  //   ],
-  // },
   // {
   //   title: "SRC/CONSTANTS/EXPERIENCES ln:145",
   //   company_name: "MathWorks",
