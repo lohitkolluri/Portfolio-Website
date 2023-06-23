@@ -1,12 +1,15 @@
+import React, { useState, useRef, useEffect } from "react";
+import { Document, Page, pdfjs } from "react-pdf";
 import { motion } from "framer-motion";
-import resumePDF from "../assets/resume.pdf";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import { useState } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+
+import resumePDF from "../assets/resume.pdf";
 
 const Resume = ({ closeResume }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = 10; // Update with the total number of pages in your resume PDF
+  const totalPages = 3; 
+  const pdfViewerRef = useRef(null);
 
   const handlePrevPage = () => {
     if (currentPage > 1) {
@@ -20,40 +23,65 @@ const Resume = ({ closeResume }) => {
     }
   };
 
+  const handleClickOutside = (event) => {
+    if (pdfViewerRef.current && !pdfViewerRef.current.contains(event.target)) {
+      closeResume();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
   return (
     <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-80 z-50">
       <motion.div
         initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
+        animate={{ scale: 0.7 }}
         transition={{ duration: 0.3 }}
-        className="max-w-3xl bg-white rounded-lg p-6 relative"
-        style={{ width: "100%", height: "100%" }} 
+        className="w-80 bg-white rounded-2xl p-6 relative"
+        ref={pdfViewerRef}
       >
-        <div className="absolute top-2 right-2">
-          <button
-            className="text-gray-600 hover:text-gray-900"
-            onClick={closeResume}
-          >
-            Close
-          </button>
+        <div className="flex flex-col justify-center items-center mb-4">
+          <div className="w-full rounded-xl overflow-hidden shadow-lg">
+            <Document
+              file={resumePDF}
+              onLoadError={(error) => console.log("PDF load error", error)}
+              renderMode="canvas"
+            >
+              <Page pageNumber={currentPage} width={300} />
+            </Document>
+          </div>
+          <div className="flex justify-center mt-4">
+            <motion.button
+              className="bg-gray-200 text-gray-700 rounded-full p-2 mx-2"
+              onClick={handlePrevPage}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <MdKeyboardArrowLeft size={20} />
+            </motion.button>
+            <motion.button
+              className="bg-gray-200 text-gray-700 rounded-full p-2 mx-2"
+              onClick={handleNextPage}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <MdKeyboardArrowRight size={20} />
+            </motion.button>
+          </div>
         </div>
-        <iframe
-          src={`${resumePDF}#page=${currentPage}`}
-          title="Resume"
-          className="w-full h-5/6 bg-white"
-        />
         <div className="flex justify-center mt-4">
-          <button
-            className="bg-gray-200 text-gray-700 rounded-full p-2 mr-2"
-            onClick={handlePrevPage}
-          >
-            <MdKeyboardArrowLeft size={20} />
+          <button className="bg-blue-500 text-white rounded-lg px-4 py-2 mr-2">
+            Hire Me
           </button>
-          <button
-            className="bg-gray-200 text-gray-700 rounded-full p-2"
-            onClick={handleNextPage}
-          >
-            <MdKeyboardArrowRight size={20} />
+          <button className="bg-green-500 text-white rounded-lg px-4 py-2">
+            Download
           </button>
         </div>
       </motion.div>
@@ -61,6 +89,4 @@ const Resume = ({ closeResume }) => {
   );
 };
 
-export default Resume;
-
-
+export default Resume

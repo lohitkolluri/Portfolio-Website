@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@react-pdf/renderer": "^3.1.12",
     "@react-three/drei": "^9.74.15",
     "@react-three/fiber": "^8.13.3",
     "framer-motion": "^10.12.16",
@@ -18,6 +19,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
+    "react-pdf": "^7.1.2",
     "react-router-dom": "^6.13.0",
     "react-tilt": "^1.0.2",
     "react-type-animation": "^3.1.0",
