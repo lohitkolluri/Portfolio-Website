@@ -24,7 +24,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import edunet from "./company/edunet.png";
-import Cisco from "./company/cisco.png";
+import Cisco from "./company/Cisco.png";
 import Mathwork from "./company/Mathwork.png";
 import four from "./company/four.png";
 
