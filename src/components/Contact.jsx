@@ -1,151 +1,135 @@
-import React, { useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import emailjs from "@emailjs/browser";
 
-import image1 from "../assets/resume/1.jpg";
-import image2 from "../assets/resume/2.jpg";
-import image3 from "../assets/resume/3.jpg";
-import resumePDF from "../assets/resume/resume.pdf";
+import { styles } from "../styles";
+import { EarthCanvas } from "./canvas";
+import { SectionWrapper } from "../hoc";
+import { slideIn } from "../utils/motion";
 
-const Resume = ({ closeResume }) => {
-  const [currentImage, setCurrentImage] = useState(1);
-  const totalImages = 3; // Update with the total number of images
+const Contact = () => {
+  const formRef = useRef();
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-  const handlePrevImage = () => {
-    if (currentImage > 1) {
-      setCurrentImage(currentImage - 1);
-    }
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    const { target } = e;
+    const { name, value } = target;
+
+    setForm({
+      ...form,
+      [name]: value,
+    });
   };
 
-  const handleNextImage = () => {
-    if (currentImage < totalImages) {
-      setCurrentImage(currentImage + 1);
-    }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs.send(
+      "service_r2i0by4", 
+      "template_mf5x3bh", 
+      {
+        from_name: form.name,
+        to_name: "Lohit Kolluri",
+        from_email: form.email,
+        to_email: "lohitkolluri@gmail.com",
+        message: form.message,
+      },
+      "p-gXzzyvEhPaJ0XA-"
+    )
+      .then(
+        () => {
+          setLoading(false);
+          alert("I will get back to you as soon as possible.");
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+
+          alert("Something went wrong. Please try again. :/");
+        }
+      );
   };
-
-  const handleClickOutside = (event) => {
-    if (event.target === event.currentTarget) {
-      closeResume();
-    }
-  };
-
-  const handleDownloadResume = () => {
-    window.open(resumePDF, "_blank");
-  };
-
-  useEffect(() => {
-    document.addEventListener("click", handleClickOutside);
-
-    return () => {
-      document.removeEventListener("click", handleClickOutside);
-    };
-  }, []);
 
   return (
     <div
-      className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-60 z-50"
-      onClick={handleClickOutside}
+      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
       <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{
-          opacity: 1,
-          scale: window.matchMedia("(min-width: 768px)").matches ? 0.54 : 1,
-        }}
-        transition={{ duration: 0.4, ease: "easeInOut" }}
-        className="w-85 h-85 bg-white bg-opacity-90 rounded-2xl p-6 relative"
-        onClick={(event) => event.stopPropagation()}
+        variants={slideIn("left", "tween", 0.2, 1)}
+        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        {!window.matchMedia("(min-width: 768px)").matches && (
-          <div className="absolute top-2 right-2">
-            <button
-              className="text-gray-600 hover:text-gray-900"
-              onClick={closeResume}
-            >
-              Close
-            </button>
-          </div>
-        )}
-        <div className="flex flex-col justify-center items-center mb-4">
-          <div className="w-full h-full rounded-xl overflow-hidden shadow-lg">
-            {currentImage === 1 && (
-              <motion.img
-                src={image1}
-                alt="Image 1"
-                className="w-full h-full object-contain"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
-              />
-            )}
-            {currentImage === 2 && (
-              <motion.img
-                src={image2}
-                alt="Image 2"
-                className="w-full h-full object-contain"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
-              />
-            )}
-            {currentImage === 3 && (
-              <motion.img
-                src={image3}
-                alt="Image 3"
-                className="w-full h-full object-contain"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
-              />
-            )}
-          </div>
-          <div className="flex justify-center mt-4">
-            <motion.button
-              className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
-              onClick={handlePrevImage}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              transition={{ duration: 0.2, ease: "easeInOut" }}
-            >
-              <MdKeyboardArrowLeft size={20} />
-            </motion.button>
-            <motion.button
-              className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
-              onClick={handleNextImage}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              transition={{ duration: 0.2, ease: "easeInOut" }}
-            >
-              <MdKeyboardArrowRight size={20} />
-            </motion.button>
-          </div>
-        </div>
-        <div className="absolute bottom-2 left-2">
-          <a
-            href={resumePDF}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-200 text-gray-700 rounded-full p-2 px-4 hover:bg-gray-300 transition-colors duration-200"
+        <p className={styles.sectionSubText}>Get in touch</p>
+        <h3 className={styles.sectionHeadText}>Contact.</h3>
+
+        <form
+          ref={formRef}
+          onSubmit={handleSubmit}
+          className="mt-12 flex flex-col gap-8"
+        >
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">Your Name</span>
+            <input
+              type="text"
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+              placeholder="Insert Your name here..."
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+            />
+          </label>
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">Email Address</span>
+            <input
+              type="email"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              placeholder="What's your email address?"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+            />
+          </label>
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">Your Message</span>
+            <textarea
+              rows={7}
+              name="message"
+              value={form.message}
+              onChange={handleChange}
+              placeholder="What you want to say...?"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+            />
+          </label>
+
+          <button
+            type="submit"
+            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
           >
-            Download Resume
-          </a>
-        </div>
-        {window.matchMedia("(min-width: 768px)").matches && (
-          <div className="absolute bottom-2 right-2">
-            <a
-              href="http://website/#contact"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
-            >
-              Hire Me
-            </a>
-          </div>
-        )}
+            {loading ? "Sending..." : "Send"}
+          </button>
+        </form>
+      </motion.div>
+
+      <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+      >
+        <EarthCanvas />
       </motion.div>
     </div>
   );
 };
 
-export default Resume;
+export default SectionWrapper(Contact, "contact");
