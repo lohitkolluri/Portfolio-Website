@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
-
+import { useState } from "react";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 import Typewriter from "typewriter-effect";
+import Resume from "./Resume";
 
 const Hero = () => {
   return (
