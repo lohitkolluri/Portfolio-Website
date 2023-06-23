@@ -17,7 +17,7 @@ import {
   docker,
   four,
   Mathwork,
-  Cisco,
+  cisco,
   edunet,
   weatherpedia,
   termpw,
@@ -123,7 +123,7 @@ const experiences = [
   // {
   //   title: "SRC/CONSTANTS/EXPERIENCES ln:132",
   //   company_name: "Cisco",
-  //   icon: Cisco,
+  //   icon: cisco,
   //   iconBg: "#ffffff",
   //   date: "NA 2023 - NA 2023",
   //   points: [
