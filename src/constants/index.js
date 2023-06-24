@@ -147,33 +147,6 @@ const experiences = [
   // },
 ];
 
-// const testimonials = [
-//   {
-//     testimonial:
-//       "XYZ",
-//     name: "John Doe",
-//     designation: "Human",
-//     company: "123 Enterprises",
-//     image: "Image Link",
-//   },
-//   {
-//     testimonial:
-//       "XYZ",
-//     name: "John Doe",
-//     designation: "Human",
-//     company: "456 Enterprises",
-//     image: "Image Link",
-//   },
-//   {
-//     testimonial:
-//       "XYZ",
-//     name: "John Doe",
-//     designation: "Human",
-//     company: "789 Enterprises",
-//     image: "Image Link",
-// }
-// ]
-
 const projects = [
   {
     name: "WeatherPedia",
@@ -273,6 +246,5 @@ export {
   services,
   technologies,
   experiences,
-  // testimonials,
   projects,
 };
