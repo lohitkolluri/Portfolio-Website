@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 import image1 from "../assets/resume/1.jpg";
@@ -10,7 +9,7 @@ import resumePDF from "../assets/resume/resume.pdf";
 
 const Resume = ({ closeResume }) => {
   const [currentImage, setCurrentImage] = useState(1);
-  const totalImages = 3; // Update with the total number of images
+  const totalImages = 3;
 
   const handlePrevImage = () => {
     if (currentImage > 1) {
@@ -30,10 +29,6 @@ const Resume = ({ closeResume }) => {
     }
   };
 
-  const handleDownloadResume = () => {
-    window.open(resumePDF, "_blank");
-  };
-
   useEffect(() => {
     document.addEventListener("click", handleClickOutside);
 
@@ -51,9 +46,9 @@ const Resume = ({ closeResume }) => {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{
           opacity: 1,
-          scale: window.matchMedia("(min-width: 768px)").matches ? 0.54 : 1,
+          scale: window.matchMedia("(min-width: 768px)").matches ? 0.525 : 1,
         }}
-        transition={{ duration: 0.4, ease: "easeInOut" }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
         className="w-85 h-85 bg-white bg-opacity-90 rounded-2xl p-6 relative"
         onClick={(event) => event.stopPropagation()}
       >
@@ -76,7 +71,7 @@ const Resume = ({ closeResume }) => {
                 className="w-full h-full object-contain"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
               />
             )}
             {currentImage === 2 && (
@@ -86,7 +81,7 @@ const Resume = ({ closeResume }) => {
                 className="w-full h-full object-contain"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
               />
             )}
             {currentImage === 3 && (
@@ -96,53 +91,49 @@ const Resume = ({ closeResume }) => {
                 className="w-full h-full object-contain"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
               />
             )}
           </div>
           <div className="flex justify-center mt-4">
-            <motion.button
-              className="bg-gray-200 text-gray-700 rounded-full p-2 mx-2"
-              onClick={handlePrevImage}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              transition={{ duration: 0.2, ease: "easeInOut" }}
-            >
-              <MdKeyboardArrowLeft size={20} className="violet-gradient" />
-            </motion.button>
-            <motion.button
-              className="bg-gray-200 text-gray-700 rounded-full p-2 mx-2"
-              onClick={handleNextImage}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              transition={{ duration: 0.2, ease: "easeInOut" }}
-            >
-              <MdKeyboardArrowRight size={20} className="violet-gradient" />
-            </motion.button>
+            <div className="flex items-center">
+              <a
+                href={resumePDF}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-500 text-white rounded-full p-2 px-4 hover:bg-green-600 transition-colors duration-200"
+              >
+                Download
+              </a>
+              <motion.button
+                className="bg-green-500 text-white rounded-full p-2 mx-2"
+                onClick={handlePrevImage}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ duration: 0.2, ease: "easeInOut" }}
+              >
+                <FiChevronLeft size={35} />
+              </motion.button>
+              <motion.button
+                className="bg-green-500 text-white rounded-full p-2 mx-2"
+                onClick={handleNextImage}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ duration: 0.2, ease: "easeInOut" }}
+              >
+                <FiChevronRight size={35} />
+              </motion.button>
+              <a
+                href="http://website/#contact"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-500 text-white rounded-full p-2 px-4 ml-2 hover:bg-green-600 transition-colors duration-200"
+              >
+                Hire Me
+              </a>
+            </div>
           </div>
         </div>
-        <div className="absolute bottom-2 left-2">
-          <a
-            href={resumePDF}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-200 text-gray-700 rounded-full p-2 px-4 hover:bg-gray-300 transition-colors duration-200"
-          >
-            Download Resume
-          </a>
-        </div>
-        {window.matchMedia("(min-width: 768px)").matches && (
-          <div className="absolute bottom-2 right-2">
-            <a
-              href="http://website/#contact"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-200 text-gray-700 rounded-full p-2 px-4 hover:bg-gray-300 transition-colors duration-200 violet-gradient"
-            >
-              Hire Me
-            </a>
-          </div>
-        )}
       </motion.div>
     </div>
   );
