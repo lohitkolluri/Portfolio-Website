@@ -51,13 +51,13 @@ const Resume = ({ closeResume }) => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{
             opacity: 1,
-            scale: window.matchMedia("(min-width: 768px)").matches ? 0.525 : 1,
+            scale: window.matchMedia("(min-width: 1080px)").matches ? 0.525 : 1,
           }}
           transition={{ duration: 0.5 }}
           className="w-85 h-85 bg-white bg-opacity-90 rounded-2xl p-6 relative"
           onClick={(event) => event.stopPropagation()}
         >
-          {!window.matchMedia("(min-width: 768px)").matches && (
+          {!window.matchMedia("(min-width: 1080px)").matches && (
             <div className="absolute top-2 right-2">
               <button
                 className="text-gray-600 hover:text-gray-900"
