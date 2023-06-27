@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-import Resume from "./Resume";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -12,7 +11,8 @@ const Navbar = () => {
   const [showResume, setShowResume] = useState(false);
 
   const toggleResume = () => {
-    setShowResume(!showResume);
+    const resumeUrl = "./src/assets/resume.pdf";
+    window.open(resumeUrl);
   };
 
   useEffect(() => {
@@ -24,9 +24,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`${
-          styles.paddingX
-        } w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+        className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
       >
         <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
           <Link

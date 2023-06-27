@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+.resume-button {
+  border: 2px solid blue;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
