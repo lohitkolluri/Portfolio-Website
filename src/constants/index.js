@@ -115,8 +115,13 @@ const experiences = [
     icon: edunet,
     iconBg: "#ffffff",
     date: "June 2023 - July 2023",
-    points: ["Made an project on mental health fitness tracker which is a machine learning model that utilizes regression techniques to provide insights into mental health and make predictions based on the available data."],
-     },
+    points: [
+      "Developed a fully functional Mental Health Fitness Tracker ML model using Python and scikit-learn.",
+      "Utilized 12 types of regression algorithms to achieve precise results in analyzing and predicting mental fitness levels from over 150 countries.",
+      "Cleaned, preprocessed, and engineered features to enhance the model's predictive capabilities.",
+      "Optimized the model's performance by fine-tuning hyperparameters and implementing ensemble methods, resulting in an impressive accuracy percentage of 98.50%.",
+    ],
+  },
 ];
 
 const projects = [
@@ -185,7 +190,8 @@ const projects = [
       },
     ],
     image: mhft,
-    source_code_link: "https://github.com/lohitkolluri/mental_health_fitness_tracker",
+    source_code_link:
+      "https://github.com/lohitkolluri/mental_health_fitness_tracker",
   },
   {
     name: "Mini Projects",
@@ -214,9 +220,4 @@ const projects = [
   },
 ];
 
-export {
-  services,
-  technologies,
-  experiences,
-  projects,
-};
+export { services, technologies, experiences, projects };
