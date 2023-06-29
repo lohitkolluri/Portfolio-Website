@@ -2,7 +2,6 @@ import python from "./python.png";
 import c from "./c.png";
 import cpp from "./cpp.png";
 
-
 import logo from "./logo.svg";
 import java from "./java.png";
 import github from "./github.png";

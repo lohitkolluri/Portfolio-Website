@@ -31,18 +31,19 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs.send(
-      "service_r2i0by4", 
-      "template_mf5x3bh", 
-      {
-        from_name: form.name,
-        to_name: "Lohit Kolluri",
-        from_email: form.email,
-        to_email: "lohitkolluri@gmail.com",
-        message: form.message,
-      },
-      "p-gXzzyvEhPaJ0XA-"
-    )
+    emailjs
+      .send(
+        "service_r2i0by4",
+        "template_mf5x3bh",
+        {
+          from_name: form.name,
+          to_name: "Lohit Kolluri",
+          from_email: form.email,
+          to_email: "lohitkolluri@gmail.com",
+          message: form.message,
+        },
+        "p-gXzzyvEhPaJ0XA-"
+      )
       .then(
         () => {
           setLoading(false);
