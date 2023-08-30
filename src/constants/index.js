@@ -21,6 +21,7 @@ import {
   minipro,
   threejs,
   mhft,
+  sketcher,
 } from "../assets";
 
 export const navLinks = [
@@ -218,6 +219,27 @@ const projects = [
     image: minipro,
     source_code_link: "https://github.com/lohitkolluri/Mini-Projects",
   },
+{
+  name: "Sketcher",
+  description:
+    "convert an input image to a pencil sketch using OpenCV and matplotlib libraries.",
+  tags: [
+    {
+      name: "OpenCV",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "Matplotlib",
+      color: "green-text-gradient",
+    },
+    {
+      name: "Python",
+      color: "pink-text-gradient",
+    },
+  ],
+  image: sketcher,
+  source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
+},
 ];
 
 export { services, technologies, experiences, projects };

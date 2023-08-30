@@ -28,6 +28,7 @@ import weatherpedia from "./WeatherPedia.png";
 import termpw from "./termpw.png";
 import minipro from "./minipro.png";
 import mhft from "./mhft.png";
+import sketcher from "./sketcher.png";
 
 export {
   logo,
@@ -56,4 +57,5 @@ export {
   termpw,
   minipro,
   mhft,
+  sketcher,
 };
