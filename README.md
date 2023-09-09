@@ -1,10 +1,8 @@
 # Portfolio Website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f0e18015-e03f-4c71-9165-8bab8f7e1ebc/deploy-status)](https://app.netlify.com/sites/f0e18015-e03f-4c71-9165-8bab8f7e1ebc)
-
 This repository contains the source code for my personal portfolio website. The website showcases my projects, skills, and provides a way for others to get in touch with me. It is built using Vite.js, HTML, CSS, and React, and is deployed using Netlify.
 
-You can access the live website at [https://lohitkolluri.netlify.app/](https://lohitkolluri.netlify.app/).
+You can access the live website at [https://lohitkolluri.tech](https://lohitkolluri.tech).
 
 ## Features
 
