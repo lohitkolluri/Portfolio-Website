@@ -19,7 +19,7 @@ You can access the live website at [https://lohitkolluri.tech](https://lohitkoll
 - HTML: Markup language for structuring the content of web pages.
 - CSS: Stylesheet language for designing the visual presentation of web pages.
 - React: JavaScript library for building user interfaces.
-- Netlify: A powerful platform for continuous deployment and hosting.
+- Azure Static Web App: A powerful platform for continuous deployment and hosting.
 
 ## Getting Started
 
