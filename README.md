@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This repository contains the source code for my personal portfolio website. The website showcases my projects, skills, and provides a way for others to get in touch with me. It is built using Vite.js, HTML, CSS, and React, and is deployed using Netlify.
+This repository contains the source code for my personal portfolio website. The website showcases my projects, skills, and provides a way for others to get in touch with me. It is built using Vite.js, HTML, CSS, and React, and is deployed using Azure Static Web App.
 
 You can access the live website at [https://lohitkolluri.tech](https://lohitkolluri.tech).
 
