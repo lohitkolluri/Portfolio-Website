@@ -18,7 +18,7 @@ import {
   edunet,
   weatherpedia,
   termpw,
-  PayloadMaster,
+  payloadmaster,
   threejs,
   mhft,
   sketcher,
@@ -206,7 +206,7 @@ const projects = [
       },
 
     ],
-    image: PayloadMaster,
+    image: paym,
     source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
   },
   {

@@ -26,7 +26,7 @@ import edunet from "./company/edunet.png";
 
 import weatherpedia from "./WeatherPedia.png";
 import termpw from "./termpw.png";
-import PayloadMaster from "./PayloadMaster.png";
+import payloadmaster from "./payloadmaster.png";
 import mhft from "./mhft.png";
 import sketcher from "./sketcher.png";
 import CompileVortex from "./CompileVortex.png";
@@ -56,7 +56,7 @@ export {
   edunet,
   weatherpedia,
   termpw,
-  PayloadMaster,
+  payloadmaster,
   mhft,
   sketcher,
   CompileVortex
