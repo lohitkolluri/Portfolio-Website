@@ -206,7 +206,7 @@ const projects = [
       },
 
     ],
-    image: paym,
+    image: payloadmaster,
     source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
   },
   {
