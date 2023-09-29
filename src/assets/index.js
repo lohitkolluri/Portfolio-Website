@@ -26,9 +26,10 @@ import edunet from "./company/edunet.png";
 
 import weatherpedia from "./WeatherPedia.png";
 import termpw from "./termpw.png";
-import minipro from "./minipro.png";
+import PayloadMaster from "./PayloadMaster.png";
 import mhft from "./mhft.png";
 import sketcher from "./sketcher.png";
+import CompileVortex from "./CompileVortex.png";
 
 export {
   logo,
@@ -55,7 +56,8 @@ export {
   edunet,
   weatherpedia,
   termpw,
-  minipro,
+  PayloadMaster,
   mhft,
   sketcher,
+  CompileVortex
 };

@@ -18,10 +18,11 @@ import {
   edunet,
   weatherpedia,
   termpw,
-  minipro,
+  PayloadMaster,
   threejs,
   mhft,
   sketcher,
+  CompileVortex,
 } from "../assets";
 
 export const navLinks = [
@@ -195,29 +196,40 @@ const projects = [
       "https://github.com/lohitkolluri/mental_health_fitness_tracker",
   },
   {
-    name: "Mini Projects",
+    name: "PayloadMaster",
     description:
-      "A collection of mini projects i did in my 1st year of college.",
+      "Tool to automate payload creation using metasploit framework",
     tags: [
       {
-        name: "C",
+        name: "shell",
+        color: "blue-text-gradient",
+      },
+
+    ],
+    image: PayloadMaster,
+    source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
+  },
+  {
+    name: "CompileVortex",
+    description:
+      "Tool to automate payload creation using metasploit framework",
+    tags: [
+      {
+        name: "Javascript",
         color: "blue-text-gradient",
       },
       {
-        name: "C++",
+        name: "CSS",
         color: "green-text-gradient",
       },
       {
         name: "HTML",
         color: "pink-text-gradient",
       },
-      {
-        name: "CSS",
-        color: "white-text-gradient",
-      },
+
     ],
-    image: minipro,
-    source_code_link: "https://github.com/lohitkolluri/Mini-Projects",
+    image: CompileVortex,
+    source_code_link: "https://github.com/lohitkolluri/CompileVortex",
   },
 {
   name: "Sketcher",
