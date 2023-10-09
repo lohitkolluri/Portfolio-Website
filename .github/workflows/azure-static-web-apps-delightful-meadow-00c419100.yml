@@ -27,7 +27,7 @@ jobs:
           npm install -g bun
           bun install
       - name: Build with Bun
-        run: bun run build
+        run: bun build
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
