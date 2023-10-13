@@ -54,10 +54,7 @@ const ProjectCard = ({
 
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
+            <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
               #{tag.name}
             </p>
           ))}
@@ -79,7 +76,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Following projects showcases my skills and experience through examples
+          Following projects showcase my skills and experience through examples
           of my work. Each project is briefly described with links to code
           repositories in it.
         </motion.p>

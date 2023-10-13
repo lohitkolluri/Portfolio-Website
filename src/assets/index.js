@@ -23,6 +23,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import edunet from "./company/edunet.png";
+import mathwork from "./company/mathwork.png";
 
 import weatherpedia from "./WeatherPedia.png";
 import termpw from "./termpw.png";
@@ -59,5 +60,6 @@ export {
   payloadmaster,
   mhft,
   sketcher,
-  CompileVortex
+  CompileVortex,
+  mathwork
 };

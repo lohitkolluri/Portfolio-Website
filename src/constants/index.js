@@ -22,6 +22,7 @@ import {
   threejs,
   mhft,
   sketcher,
+  mathwork,
   CompileVortex,
 } from "../assets";
 
@@ -41,73 +42,22 @@ export const navLinks = [
 ];
 
 const services = [
-  {
-    title: "C",
-    icon: c,
-  },
-  {
-    title: "C++",
-    icon: cpp,
-  },
-  {
-    title: "Python",
-    icon: python,
-  },
-  {
-    title: "Java",
-    icon: java,
-  },
+  { title: "C", icon: c },
+  { title: "C++", icon: cpp },
+  { title: "Python", icon: python },
+  { title: "Java", icon: java },
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  // {
-  //   name: "TypeScript",
-  //   icon: typescript,
-  // },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  // {
-  //   name: "Redux Toolkit",
-  //   icon: redux,
-  // },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  // {
-  //   name: "MongoDB",
-  //   icon: mongodb,
-  // },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  // {
-  //   name: "figma",
-  //   icon: figma,
-  // },
+  { name: "HTML 5", icon: html },
+  { name: "CSS 3", icon: css },
+  { name: "JavaScript", icon: javascript },
+  { name: "Rect JS", icon: reactjs },
+  { name: "Tailwind CSS", icon: tailwind },
+  { name: "Node JS", icon: nodejs },
+  { name: "Three JS", icon: threejs },
+  { name: "git", icon: git },
+  
 ];
 
 const experiences = [
@@ -118,10 +68,21 @@ const experiences = [
     iconBg: "#ffffff",
     date: "June 2023 - July 2023",
     points: [
-      "Developed a fully functional Mental Health Fitness Tracker ML model using Python and scikit-learn.",
-      "Utilized 12 types of regression algorithms to achieve precise results in analyzing and predicting mental fitness levels from over 150 countries.",
-      "Cleaned, preprocessed, and engineered features to enhance the model's predictive capabilities.",
-      "Optimized the model's performance by fine-tuning hyperparameters and implementing ensemble methods, resulting in an impressive accuracy percentage of 98.50%.",
+      "Engineered a comprehensive Mental Health Fitness Tracker ML model utilizing Python and scikit-learn.",
+      "Maximized the model's performance by refining model parameters and employing ensemble methods, yielding an outstanding accuracy percentage of 98.50%.",
+      "Leveraged 12 regression algorithms to attain precise outcomes in analyzing and predicting mental fitness levels across 150+ countries.",
+    ],
+  },
+  {
+    title: "Mathwork Ai Virtual Intern",
+    company_name: "Mathwork | AICTE",
+    icon: mathwork,
+    iconBg: "#ffffff",
+    date: "May 2023 - Sep 2023",
+    points: [
+      "Completed virtual internship, gaining a strong foundation in MATLAB, including data analysis and processing.",
+      "Acquired practical skills in image and signal processing, including segmentation, batch processing, and spectral analysis.",
+      "Developed expertise in machine learning models for clustering, classification, and regression, and customized deep learning techniques for image classification.",
     ],
   },
 ];
@@ -183,11 +144,11 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "Jupyter Noteook",
+        name: "Jupyter Notebook",
         color: "green-text-gradient",
       },
       {
-        name: "Regression Algorithm's",
+        name: "Regression Algorithms",
         color: "pink-text-gradient",
       },
     ],
@@ -198,13 +159,12 @@ const projects = [
   {
     name: "PayloadMaster",
     description:
-      "Tool to automate payload creation using metasploit framework",
+      "Tool to automate payload creation using the Metasploit framework",
     tags: [
       {
         name: "shell",
         color: "blue-text-gradient",
       },
-
     ],
     image: payloadmaster,
     source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
@@ -212,7 +172,7 @@ const projects = [
   {
     name: "CompileVortex",
     description:
-      "Tool to automate payload creation using metasploit framework",
+      "Tool to automate payload creation using the Metasploit framework",
     tags: [
       {
         name: "Javascript",
@@ -226,32 +186,32 @@ const projects = [
         name: "HTML",
         color: "pink-text-gradient",
       },
-
     ],
     image: CompileVortex,
     source_code_link: "https://github.com/lohitkolluri/CompileVortex",
   },
-{
-  name: "Sketcher",
-  description:
-    "convert an input image to a pencil sketch using OpenCV and matplotlib libraries.",
-  tags: [
-    {
-      name: "OpenCV",
-      color: "blue-text-gradient",
-    },
-    {
-      name: "Matplotlib",
-      color: "green-text-gradient",
-    },
-    {
-      name: "Python",
-      color: "pink-text-gradient",
-    },
-  ],
-  image: sketcher,
-  source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
-},
+  {
+    name: "Sketcher",
+    description:
+      "Convert an input image to a pencil sketch using OpenCV and Matplotlib libraries.",
+    tags: [
+      {
+        name: "OpenCV",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Matplotlib",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: sketcher,
+    source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
+  },
 ];
+
 
 export { services, technologies, experiences, projects };

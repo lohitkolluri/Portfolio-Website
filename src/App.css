@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -40,11 +42,13 @@
 .read-the-docs {
   color: #888;
 }
+
 .resume-button {
   border: 2px solid blue;
   border-radius: 4px;
   padding: 6px 12px;
 }
+
 .foggy-glass {
   backdrop-filter: blur(8px);
   background-color: rgba(255, 255, 255, 0.5);
