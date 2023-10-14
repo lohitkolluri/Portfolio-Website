@@ -6,7 +6,7 @@ import c from "./tech-stack/c.png";
 import cpp from "./tech-stack/cpp.png";
 import java from "./tech-stack/java.png";
 
-import weatherpedia from "./projects/weatherpedia.png";
+import weatherpedia from "./projects/WeatherPedia.png";
 import termpw from "./projects/termpw.png";
 import payloadmaster from "./projects/payloadmaster.png";
 import mhft from "./projects/mhft.png";
