@@ -15,19 +15,19 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v2
         with:
           submodules: true
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - name: Install Bun and Dependencies
+      - name: Install dependencies and build
         run: |
           npm install -g bun
           bun install
-      - name: Build with Bun
-        run: bun run build
+          bun run build
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
@@ -36,7 +36,6 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           app_location: "dist" # Adjust the app location based on your Bun build output
-          api_location: "api"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
