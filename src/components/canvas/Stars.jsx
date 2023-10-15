@@ -1,14 +1,20 @@
-import { useState, useRef, Suspense } from "react";
+import { Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
+import { createRoot } from 'react-dom/client';
 import * as random from "maath/random/dist/maath-random.esm";
-import "../../index.css" 
+import "../../index.css";
+
+const NUM_STARS = 1500; // Adjust the number of stars as needed
 
 const Stars = (props) => {
-  const ref = useRef();
-  const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.2 })
-  );
+  const ref = {
+    current: {
+      rotation: { x: 0, y: 0, z: Math.PI / 4 },
+    },
+  };
+
+  const sphere = random.inSphere(new Float32Array(NUM_STARS * 3), { radius: 1.2 });
 
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;

@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -25,6 +24,7 @@ const ServiceCard = ({ index, title, icon }) => (
           src={icon}
           alt="web-development"
           className="w-16 h-16 object-contain"
+          loading="lazy"
         />
 
         <h3 className="text-white text-[20px] font-bold text-center">

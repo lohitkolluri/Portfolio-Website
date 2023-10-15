@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import "../index.css";
 
 const InputField = ({ label, value, onChange, placeholder, name, type }) => (
   <label className="flex flex-col">

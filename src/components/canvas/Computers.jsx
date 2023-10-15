@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
-const Computers = ({ isMobile }) => {
+const ComputerModel = ({ isMobile }) => {
   const { scene } = useGLTF("./desktop_pc/scene.gltf");
 
   return (
@@ -28,6 +28,8 @@ const Computers = ({ isMobile }) => {
   );
 };
 
+const MemoizedComputerModel = React.memo(ComputerModel);
+
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -40,7 +42,6 @@ const ComputersCanvas = () => {
 
     mediaQuery.addEventListener("change", handleMediaQueryChange);
 
-    // Cleanup the event listener
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
@@ -56,7 +57,7 @@ const ComputersCanvas = () => {
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
-        <Computers isMobile={isMobile} />
+        <MemoizedComputerModel isMobile={isMobile} />
       </Suspense>
       <Preload all />
     </Canvas>
