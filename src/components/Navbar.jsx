@@ -8,7 +8,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const toggleResume = () => {
-    const resumeUrl = "/resume.pdf";
+    const resumeUrl = "https://lohitcdn.blob.core.windows.net/portfoliocdn/Etc/resume.pdf";
     window.open(resumeUrl);
   };
 
