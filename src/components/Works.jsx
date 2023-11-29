@@ -3,7 +3,6 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -30,7 +29,7 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <img src={github} alt="source code" className="w-1/2 h-1/2 object-contain" />
+              <img src={"https://lohitcdn.blob.core.windows.net/portfoliocdn/Etc/github.png"} alt="source code" className="w-1/2 h-1/2 object-contain" />
             </div>
           </div>
         </div>

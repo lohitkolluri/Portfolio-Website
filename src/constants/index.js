@@ -1,21 +1,3 @@
-import {
-  c,
-  python,
-  java,
-  cpp,
-  javascript,
-  html,
-  css,
-  reactjs,
-  tailwind,
-  nodejs,
-  git,
-  edunet,
-  threejs,
-  mathwork,
-  eduskill,
-} from "../assets";
-
 export const navLinks = [
   {
     id: "about",
@@ -32,28 +14,28 @@ export const navLinks = [
 ];
 
 export const services = [
-  { title: "C", icon: c },
-  { title: "C++", icon: cpp },
-  { title: "Python", icon: python },
-  { title: "Java", icon: java },
+  { title: "C", icon: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Tech-Stack/C.png" },
+  { title: "C++", icon: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Tech-Stack/CPP.png" },
+  { title: "Python", icon: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Tech-Stack/Python.png" },
+  { title: "Java", icon: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Tech-Stack/Java.png" },
 ];
 
 export const technologies = [
-  { name: "HTML 5", icon: html },
-  { name: "CSS 3", icon: css },
-  { name: "JavaScript", icon: javascript },
-  { name: "Rect JS", icon: reactjs },
-  { name: "Tailwind CSS", icon: tailwind },
-  { name: "Node JS", icon: nodejs },
-  { name: "Three JS", icon: threejs },
-  { name: "git", icon: git },
+  { name: "HTML 5", icon: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Tech/HTML.png" },
+  { name: "CSS 3", icon: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Tech/CSS.png" },
+  { name: "JavaScript", icon: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Tech/Javascript.png" },
+  { name: "Rect JS", icon: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Tech/ReactJS.png" },
+  { name: "Tailwind CSS", icon: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Tech/TailwindCSS.png" },
+  { name: "Node JS", icon: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Tech/NodeJS.png" },
+  { name: "Three JS", icon: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Tech/ThreeJS.png" },
+  { name: "git", icon: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Tech/Git.png" },
 ];
 
 export const experiences = [
   {
     title: "AI/ML Intern",
     company_name: "EduSkill Foundation | AWS Academy | AICTE",
-    icon: eduskill,
+    icon: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Experiences/EduSkill.png",
     iconBg: "#161329",
     date: "Sep 2023 - Nov 2023",
     points: [
@@ -64,7 +46,7 @@ export const experiences = [
   {
     title: "Mathwork Ai Virtual Intern",
     company_name: "Mathwork | AICTE",
-    icon: mathwork,
+    icon: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Experiences/MathWorks.png",
     iconBg: "#161329",
     date: "May 2023 - Sep 2023",
     points: [
@@ -76,7 +58,7 @@ export const experiences = [
   {
     title: "Artificial Intelligence Intern",
     company_name: "Edunet Foundation | IBM SkillsBuild | AICTE",
-    icon: edunet,
+    icon: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Experiences/Edunet.png",
     iconBg: "#161329",
     date: "June 2023 - July 2023",
     points: [
@@ -98,7 +80,7 @@ export const projects = [
       { name: "bootstrap 5.3.0", color: "pink-text-gradient" },
       { name: "Weather API by API Ninjas", color: "yellow-text-gradient" },
     ],
-    image: "https://lohitcdn.blob.core.windows.net/portfoliocdn/WeatherPedia.png",
+    image: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Projects/WeatherPedia.png",
     source_code_link: "https://github.com/lohitkolluri/WeatherPedia",
   },
   {
@@ -110,7 +92,7 @@ export const projects = [
       { name: "css", color: "green-text-gradient" },
       { name: "Javascript", color: "pink-text-gradient" },
     ],
-    image: "https://lohitcdn.blob.core.windows.net/portfoliocdn/termpw.png",
+    image: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Projects/TerminalPW.png",
     source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
   },
   {
@@ -122,7 +104,7 @@ export const projects = [
       { name: "Jupyter Notebook", color: "green-text-gradient" },
       { name: "Regression Algorithms", color: "pink-text-gradient" },
     ],
-    image: "https://lohitcdn.blob.core.windows.net/portfoliocdn/mhft.png",
+    image: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Projects/MHFT.png",
     source_code_link:
       "https://github.com/lohitkolluri/mental_health_fitness_tracker",
   },
@@ -133,7 +115,7 @@ export const projects = [
     tags: [
       { name: "shell", color: "blue-text-gradient" },
     ],
-    image: "https://lohitcdn.blob.core.windows.net/portfoliocdn/payloadmaster.png",
+    image: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Projects/PayloadMaster.png",
     source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
   },
   {
@@ -145,7 +127,7 @@ export const projects = [
       { name: "CSS", color: "green-text-gradient" },
       { name: "HTML", color: "pink-text-gradient" },
     ],
-    image: "https://lohitcdn.blob.core.windows.net/portfoliocdn/CompileVortex.png",
+    image: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Projects/CompileVortex.png",
     source_code_link: "https://github.com/lohitkolluri/CompileVortex",
   },
   {
@@ -157,7 +139,7 @@ export const projects = [
       { name: "Matplotlib", color: "green-text-gradient" },
       { name: "Python", color: "pink-text-gradient" },
     ],
-    image: "https://lohitcdn.blob.core.windows.net/portfoliocdn/sketcher.png", 
+    image: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Projects/Sketcher.png", 
     source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
   },
 ];
