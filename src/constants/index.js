@@ -11,14 +11,8 @@ import {
   nodejs,
   git,
   edunet,
-  weatherpedia,
-  termpw,
-  payloadmaster,
   threejs,
-  mhft,
-  sketcher,
   mathwork,
-  CompileVortex,
   eduskill,
 } from "../assets";
 
@@ -104,7 +98,7 @@ export const projects = [
       { name: "bootstrap 5.3.0", color: "pink-text-gradient" },
       { name: "Weather API by API Ninjas", color: "yellow-text-gradient" },
     ],
-    image: weatherpedia,
+    image: "https://lohitcdn.blob.core.windows.net/portfoliocdn/WeatherPedia.png",
     source_code_link: "https://github.com/lohitkolluri/WeatherPedia",
   },
   {
@@ -116,7 +110,7 @@ export const projects = [
       { name: "css", color: "green-text-gradient" },
       { name: "Javascript", color: "pink-text-gradient" },
     ],
-    image: termpw,
+    image: "https://lohitcdn.blob.core.windows.net/portfoliocdn/termpw.png",
     source_code_link: "https://github.com/lohitkolluri/lohitkolluri.github.io",
   },
   {
@@ -128,7 +122,7 @@ export const projects = [
       { name: "Jupyter Notebook", color: "green-text-gradient" },
       { name: "Regression Algorithms", color: "pink-text-gradient" },
     ],
-    image: mhft,
+    image: "https://lohitcdn.blob.core.windows.net/portfoliocdn/mhft.png",
     source_code_link:
       "https://github.com/lohitkolluri/mental_health_fitness_tracker",
   },
@@ -139,7 +133,7 @@ export const projects = [
     tags: [
       { name: "shell", color: "blue-text-gradient" },
     ],
-    image: payloadmaster,
+    image: "https://lohitcdn.blob.core.windows.net/portfoliocdn/payloadmaster.png",
     source_code_link: "https://github.com/lohitkolluri/PayloadMaster",
   },
   {
@@ -151,7 +145,7 @@ export const projects = [
       { name: "CSS", color: "green-text-gradient" },
       { name: "HTML", color: "pink-text-gradient" },
     ],
-    image: CompileVortex,
+    image: "https://lohitcdn.blob.core.windows.net/portfoliocdn/CompileVortex.png",
     source_code_link: "https://github.com/lohitkolluri/CompileVortex",
   },
   {
@@ -163,7 +157,7 @@ export const projects = [
       { name: "Matplotlib", color: "green-text-gradient" },
       { name: "Python", color: "pink-text-gradient" },
     ],
-    image: sketcher,
+    image: "https://lohitcdn.blob.core.windows.net/portfoliocdn/sketcher.png", 
     source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
   },
 ];
