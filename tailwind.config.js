@@ -18,7 +18,7 @@ module.exports = {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
+        'hero-pattern': "url('https://lohitcdn.blob.core.windows.net/portfoliocdn/Etc/herobg.png')",
       },
     },
   },

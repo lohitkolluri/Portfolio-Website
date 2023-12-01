@@ -1,10 +1,18 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { DRACOLoader } from "three/addons/loaders/DRACOLoader";
 import CanvasLoader from "../Loader";
 
 const ComputerModel = ({ isMobile }) => {
-  const { scene } = useGLTF("./desktop_pc/scene.gltf");
+  const { scene } = useGLTF(
+    "./desktop_pc/scene.gltf",
+    undefined,
+    (loader) => {
+      const dracoLoader = new DRACOLoader();
+      loader.setDRACOLoader(dracoLoader);
+    }
+  );
 
   return (
     <mesh>
@@ -56,7 +64,11 @@ const ComputersCanvas = () => {
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
+        <OrbitControls
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
+        />
         <MemoizedComputerModel isMobile={isMobile} />
       </Suspense>
       <Preload all />
