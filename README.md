@@ -1,8 +1,7 @@
 # Portfolio Website
 
-This repository contains the source code for my personal portfolio website. The website showcases my projects, skills, and provides a way for others to get in touch with me. It is built using Vite.js, HTML, CSS, and React, and is deployed using Azure Static Web App.
-
-You can access the live website at [https://lohitkolluri.tech](https://lohitkolluri.tech).
+**Brief Overview of the Project:**
+- A user-friendly portfolio website showcasing my projects, skills, and providing a way for others to get in touch.
 
 ## Features
 
@@ -11,11 +10,11 @@ You can access the live website at [https://lohitkolluri.tech](https://lohitkoll
 - Work page showcasing my projects with descriptions, screenshots, and links.
 - Contact page with a contact form for visitors to reach out to me.
 - Resume page providing a downloadable version of my resume.
-- Responsive design to ensure a great user experience on different devices.
+- Responsive design for a great user experience on different devices.
 
 ## Technologies Used
 
-- Vite.js: A fast and lightweight development tooling for modern web projects.
+- Vite.js: A fast and lightweight development tool for modern web projects.
 - HTML: Markup language for structuring the content of web pages.
 - CSS: Stylesheet language for designing the visual presentation of web pages.
 - React: JavaScript library for building user interfaces.
@@ -23,34 +22,35 @@ You can access the live website at [https://lohitkolluri.tech](https://lohitkoll
 
 ## Getting Started
 
-To run the project locally, follow these steps:
+**Prerequisites:**
+```markdown
+- Node.js 14.x or higher
+- npm (Node Package Manager)
+```
 
+**Step-by-Step Instructions for Installation and Setup:**
+```markdown
+## Installation
 1. Clone the repository:
-
-   ```bash
    git clone https://github.com/lohitkolluri/Portfolio-Website.git
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
    cd Portfolio-Website
    ```
 
-3. Install the dependencies:
-
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-4. Start the development server:
-
+3. Start the development server:
    ```bash
    npm run dev
    ```
 
    The website will be accessible at `http://localhost:3000`.
+## Usage
+To explore my portfolio website, follow these steps:
 
-## Deployment
+1. Visit [https://lohitkolluri.tech](https://lohitkolluri.tech).
+2. Navigate through different sections: Home, About, Work, Contact, and Resume.
+3. Experience the responsive design on various devices.
 
-The website is automatically deployed to Netlify whenever changes are pushed to the `main` branch. The deployment status can be viewed using the Netlify badge at the top of this README.
