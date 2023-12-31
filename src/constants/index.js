@@ -140,6 +140,6 @@ export const projects = [
       { name: "Python", color: "pink-text-gradient" },
     ],
     image: "https://lohitcdn.blob.core.windows.net/portfoliocdn/Projects/Sketcher.png", 
-    source_code_link: "https://github.com/lohitkolluri/Image_to_Pencil_Sketch_App",
+    source_code_link: "https://github.com/lohitkolluri/SketchiFy",
   },
 ];
