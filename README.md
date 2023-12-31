@@ -1,56 +1,64 @@
-# Portfolio Website
+<h1 align="center" id="title">Portfolio Website V2</h1>
 
-**Brief Overview of the Project:**
-- A user-friendly portfolio website showcasing my projects, skills, and providing a way for others to get in touch.
+<p id="description">A user-friendly portfolio website showcasing my projects skills and providing a way for others to get in touch. Made using Vite.Js and Three.Js.</p>
 
-## Features
+<h2>🚀 Demo</h2>
 
-- Home page with a hero section welcoming visitors and providing a brief introduction.
-- About page highlighting my background, skills, and experience.
-- Work page showcasing my projects with descriptions, screenshots, and links.
-- Contact page with a contact form for visitors to reach out to me.
-- Resume page providing a downloadable version of my resume.
-- Responsive design for a great user experience on different devices.
+[https://lohitkolluri.tech](https://lohitkolluri.tech)
 
-## Technologies Used
+  
+  
+<h2>🧐 Features</h2>
 
-- Vite.js: A fast and lightweight development tool for modern web projects.
-- HTML: Markup language for structuring the content of web pages.
-- CSS: Stylesheet language for designing the visual presentation of web pages.
-- React: JavaScript library for building user interfaces.
-- Azure Static Web App: A powerful platform for continuous deployment and hosting.
+Here're some of the project's best features:
 
-## Getting Started
+*   Home page with a hero section welcoming visitors and providing a brief introduction.
+*   About page highlighting my background skills and experience.
+*   Work page showcasing my projects with descriptions screenshots and links.
+*   Contact page with a contact form for visitors to reach out to me.
+*   Resume page providing a downloadable version of my resume.
+*   Responsive design for a great user experience on different devices.
 
-**Prerequisites:**
-```markdown
-- Node.js 14.x or higher
-- npm (Node Package Manager)
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Clone the repository:</p>
+
+```
+git clone https://github.com/lohitkolluri/Portfolio-Website.git
 ```
 
-**Step-by-Step Instructions for Installation and Setup:**
-```markdown
-## Installation
-1. Clone the repository:
-   git clone https://github.com/lohitkolluri/Portfolio-Website.git
-   cd Portfolio-Website
-   ```
+<p>2. Navigate to directory:</p>
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+```
+cd Portfolio-Website
+```
 
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
+<p>3. Install dependencies</p>
 
-   The website will be accessible at `http://localhost:3000`.
-## Usage
-To explore my portfolio website, follow these steps:
+```
+ npm install
+```
 
-1. Visit [https://lohitkolluri.tech](https://lohitkolluri.tech).
-2. Navigate through different sections: Home, About, Work, Contact, and Resume.
-3. Experience the responsive design on various devices.
+<p>4. Start the development server:</p>
 
+```
+ npm run dev
+```
+
+<p>5. The website will be accessible at</p>
+
+http://localhost:3000
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   EmailJS
+*   Vite.Js
+*   ThreeJs
+*   Tailwind CSS
+
+<h2>🛡️ License:</h2>
+
+This project is licensed under the [MIT License](LICENSE)
