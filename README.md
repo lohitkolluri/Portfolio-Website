@@ -4,7 +4,7 @@
 
 <h2>🚀 Demo</h2>
 
-[https://lohitkolluri.tech](https://lohitkolluri.tech)
+[v2.lohitkolluri.tech](https://v2.lohitkolluri.tech)
 
   
   
