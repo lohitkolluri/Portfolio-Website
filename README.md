@@ -6,8 +6,8 @@
 
 [https://portfolio-lohit.vercel.app/](https://portfolio-lohit.vercel.app/)
 
-  
-  
+
+
 <h2>🧐 Features</h2>
 
 Here're some of the project's best features:
@@ -48,8 +48,8 @@ cd Portfolio-Website
 <p>5. The website will be accessible at</p>
 
 http://localhost:3000
-  
-  
+
+
 <h2>💻 Built with</h2>
 
 Technologies used in the project:
