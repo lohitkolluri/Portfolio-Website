@@ -1,64 +1,137 @@
-<h1 align="center" id="title">Portfolio Website V2</h1>
+<div align="center">
 
-<p id="description">A user-friendly portfolio website showcasing my projects skills and providing a way for others to get in touch. Made using Vite.Js and Three.Js.</p>
+![Banner](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Portfolio%20Website%20V2&fontSize=80&animation=fadeIn&fontAlignY=35)
 
-<h2>🚀 Demo</h2>
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#demo">Demo</a> •
+  <a href="#screenshots">Screenshots</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#tech-stack">Tech Stack</a>
+</p>
 
-[https://portfolio-lohit.vercel.app/](https://portfolio-lohit.vercel.app/)
+[![GitHub license](https://img.shields.io/github/license/lohitkolluri/Portfolio?style=flat-square)](LICENSE)
+[![Website](https://img.shields.io/website?style=flat-square&url=https%3A%2F%2Fportfolio-lohit.vercel.app)](https://portfolio-lohit.vercel.app)
+[![Made with React](https://img.shields.io/badge/Made%20with-React-61DAFB?style=flat-square&logo=react)](https://reactjs.org)
 
+<p align="center">A modern, responsive portfolio website showcasing professional experience, projects, and skills. Built with React, Vite, and Tailwind CSS, featuring smooth animations and interactive 3D elements. ✨</p>
 
+</div>
 
-<h2>🧐 Features</h2>
+## ✨ Features
 
-Here're some of the project's best features:
+<div align="center">
 
-*   Home page with a hero section welcoming visitors and providing a brief introduction.
-*   About page highlighting my background skills and experience.
-*   Work page showcasing my projects with descriptions screenshots and links.
-*   Contact page with a contact form for visitors to reach out to me.
-*   Resume page providing a downloadable version of my resume.
-*   Responsive design for a great user experience on different devices.
-
-<h2>🛠️ Installation Steps:</h2>
-
-<p>1. Clone the repository:</p>
-
+```mermaid
+mindmap
+  root((Portfolio Website))
+    User Interface
+      Responsive Design
+      Smooth Animations
+      Interactive 3D Elements
+    Sections
+      About Me
+      Experience
+      Projects
+      Contact
+    Technical Features
+      React with Vite
+      Tailwind CSS Styling
+      EmailJS Integration
+    Integrations
+       Email Contact
+      Project Showcase
 ```
-git clone https://github.com/lohitkolluri/Portfolio-Website.git
+
+</div>
+
+## 🚀 Demo
+
+Experience the live portfolio at [https://portfolio-lohit.vercel.app](https://portfolio-lohit.vercel.app)
+
+## 🛠️ Installation
+
+1️⃣ Clone the repository:
+
+```bash
+git clone https://github.com/lohitkolluri/Portfolio-Website
 ```
 
-<p>2. Navigate to directory:</p>
+2️⃣ Navigate to project directory:
 
-```
+```bash
 cd Portfolio-Website
 ```
 
-<p>3. Install dependencies</p>
+3️⃣ Install dependencies:
 
-```
- npm install
-```
-
-<p>4. Start the development server:</p>
-
-```
- npm run dev
+```bash
+npm install
 ```
 
-<p>5. The website will be accessible at</p>
+4️⃣ Run development server:
 
-http://localhost:3000
+```bash
+npm run dev
+```
 
+5️⃣ Open in browser:
 
-<h2>💻 Built with</h2>
+- Visit [http://localhost:3000](http://localhost:3000)
 
-Technologies used in the project:
+## 💻 Tech Stack
 
-*   EmailJS
-*   Vite.Js
-*   ThreeJs
-*   Tailwind CSS
+<table align="center">
+  <tr>
+    <td align="center" width="96">
+      <img src="https://skillicons.dev/icons?i=react" width="48" height="48" alt="React" />
+      <br>React
+    </td>
+      <td align="center" width="96">
+      <img src="https://skillicons.dev/icons?i=vite" width="48" height="48" alt="Vite" />
+      <br>Vite
+    </td>
+    <td align="center" width="96">
+      <img src="https://skillicons.dev/icons?i=tailwind" width="48" height="48" alt="Tailwind CSS" />
+      <br>Tailwind CSS
+    </td>
+      <td align="center" width="96">
+      <img src="https://skillicons.dev/icons?i=threejs" width="48" height="48" alt="Three.js" />
+      <br>Three.js
+    </td>
+  </tr>
+</table>
 
-<h2>🛡️ License:</h2>
+## ⚡ Core Features
 
-This project is licensed under the [MIT License](LICENSE)
+- 📱 Responsive Design
+
+  - Mobile-first approach
+  - Seamless experience across all devices
+  - Adaptive layouts and components
+
+- 🎯 Dynamic Content
+
+  - Interactive project showcase
+  - Engaging experience section
+  - Animated skill representations
+
+- 🎨 Modern UI/UX
+
+  - Smooth Framer Motion animations
+  - Intuitive navigation
+  - Clean and professional design
+  - Interactive 3D elements using Three.js
+
+- ✉️ Email Integration
+  - Contact form using EmailJS
+
+## 📄 License
+
+<div align="center">
+
+MIT License © [Lohit Kolluri](LICENSE)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%"/>
+
+</div>
